@@ -197,7 +197,7 @@ jobs:
       # Add ssh keys with fingerprint
       - add_ssh_keys:
          fingerprints:
-            - "0c:48:84:3d:29:67:f8:7b:ff:85:c7:d1:37:9d:bc:08"
+            - "a9:10:0d:b1:fe:0b:76:47:38:e2:d9:b7:9d:39:31:f5"
       # attach workspace
       - attach_workspace:
           at: ~/
@@ -244,7 +244,7 @@ jobs:
           command: |
             if grep -q "has been executed successfully." ~/project/backend/migrations_dump.txt
             then
-                curl --insecure https://kvdb.io/4VJ274WBBHEq9RdkvTFDeu/migration_${CIRCLE_WORKFLOW_ID:0:7} -d '1'
+                curl --insecure https://kvdb.io/UnU5iEcWXUhD1nM5Wrm6yC/migration_${CIRCLE_WORKFLOW_ID:0:7} -d '1'
             fi
      # Here's where you will add some code to rollback on failure
       - destroy-environment:
@@ -302,7 +302,7 @@ jobs:
       # Add ssh keys with fingerprint
       - add_ssh_keys:
          fingerprints:
-            - "0c:48:84:3d:29:67:f8:7b:ff:85:c7:d1:37:9d:bc:08"
+            - "a9:10:0d:b1:fe:0b:76:47:38:e2:d9:b7:9d:39:31:f5"
       # attach workspace
       - attach_workspace:
           at: ~/
